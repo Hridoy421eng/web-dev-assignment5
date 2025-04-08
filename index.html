@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+</head>
+<body class="poppins-regular bg-[#F4F7FF]">
+    <header>
+                       <!-- nav part starts here -->
+
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm mt-5 justify-between items-center text-center mx-auto">
+                <div class="flex-1 ml-5">
+                    <div class="flex gap-2">
+                        <div class="w-10 rounded-full">
+                            <img class="object-cover" src="assets/logo.png" alt="photo of logo">
+                        </div>
+                        <div class="text-3xl">Dev<span class="font-bold">Board</span>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="flex gap-6">
+                      <div class="flex gap-1 w-25 h-12 bg-gray-100 rounded-3xl mt-2">
+                          <div class="w-8 ml-3 mt-3"><img class="object-cover" src="assets/checkbox.png" alt="photo of checkbox"></div>
+                          <div class="text-2xl font-bold ml-2 mt-2"><p>23</p></div>
+                      </div>
+                      <div role="button" class="btn btn-ghost btn-circle avatar mt-1 w-14 h-14 bg-gray-100 rounded-full">
+                         <div class="w-10 rounded-full bg-color-btn">
+                            <img id="theme-toggle" class="theme-controller object-cover"
+                              alt=""
+                              src="assets/theme-btn.png" />
+                         </div>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+
+
+    </header>
+                     
+                          <!--  task main part starts here -->
+    <main class="mt-5 flex gap-10">
+
+                  <!--  task head part starts here -->
+        <section class="w-3/4 bg-white rounded-xl">
+              <div id="task-head" class="grid grid-cols-4 gap-4 mt-5">
+                  <div class="flex gap-2 justify-center items-center bg-[#F4F7FF] h-25 rounded-xl ml-5">
+                        <div class="bg-white w-12 h-12 rounded-full"><img class="w-6 mt-3 ml-3 object-cover" src="assets/checkbox.png" alt="checkbox picture">
+                        </div>
+                        <div>
+                             <p class="text-gray-700">Task Assigned</p>
+                             <h3 class="text-2xl font-bold">06</h3>
+                        </div>
+                  </div>
+                  <div class="flex col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] justify-center items-center h-25 rounded-xl gap-4
+                   cursor-pointer">
+                        <div><img class="w-18" src="assets/board.png" alt="calender's pic"></div>
+                        <div><p class="text-white text-xl">Discover Something <br> New Today!</p></div>
+                  </div>
+                  <div class="flex gap-2 justify-center items-center bg-[#F4F7FF] h-25 rounded-xl mr-5">
+                        <div class="bg-white w-12 h-12 rounded-full"><img class="w-6 mt-3 ml-3 object-cover" src="assets/calender.png" alt="checkbox picture">
+                        </div>
+                        <div>
+                            <p class="text-gray-700">Wed ,</p>
+                            <h2 id="table-h-date" class="text-xl font-bold"></h2>
+                        </div>
+                  </div>
+             </div>
+          <div class="border-t-2 border-dashed border-[#a3abe2] mt-5"></div>
+
+                    <!-- task table starts here -->
+
+            <div id="task-table" class="mt-10 mb-10">
+                    <div class="w-full grid grid-cols-3 gap-15 ml-5">
+
+                        <!-- fix card no 1 -->
+                        
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">ShopEase</p>
+                                 <h2 class="card-title text-xl mt-3">Fix Mobile Button Issue </h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">A card component has a figure, a body part, and inside body there are title and</p>
+                              <div class="w-68 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                        
+
+                        <!-- fix card no 2  -->
+                        
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">CloudSync</p>
+                                 <h2 class="card-title text-xl mt-3">Add Dark Mode</h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and</p>
+                              <div class="w-68 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                        
+
+                        <!-- fix card no 3 -->
+                        
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">SwiftPay</p>
+                                 <h2 class="card-title text-xl mt-3">Optimize  Home page</h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">An optimized home page is crucial for creating a strong first impression</p>
+                              <div class="w-68 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                       
+
+                        <!-- fix card no 4 -->
+
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">Meta</p>
+                                 <h2 class="card-title text-xl mt-3">Add new emoji 🤲</h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">If you want to include emojis in your text, you can simply use Unicode </p>
+                              <div class="w-68 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                        
+
+                        <!-- fix card no 5 -->
+                        
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">Google LLC</p>
+                                 <h2 class="card-title text-xl mt-3">Integrate OpenAI API </h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">Integrating the OpenAI API into your application involves a few steps. Here's</p>
+                              <div class="w-68 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                       
+
+                        <!-- fix card no 6 -->
+                        
+                            <div class="card-body bg-[#F4F7FF] rounded-2xl w-80 bg-base-100">
+                                 <p class="flex bg-white w-30 h-8 justify-center items-center rounded-md">Glassdoar</p>
+                                 <h2 class="card-title text-xl mt-3">Improve Job searching </h2>
+                                 <p class="text-gray-500 h-20 flex justify-center items-center bg-white mt-3 pl-3 rounded-lg">Research common interview questions for your role and practice answering them confide</p>
+                              <div class="w-64 border-t-2 border-dashed border-[#a3abe2] mt-3"></div>
+                                <div class="flex justify-between">
+                                      <div>
+                                         <p class="mt-10">Deadline</p>
+                                         <time datetime="2025-04-06">April 6, 2025</time>
+                                      </div>
+                                      <div class="card-actions">
+                                         <button class="btn btn-primary mt-10">Completed</button>
+                                     </div>
+                                </div>
+                            </div>
+                    </div>   
+                      
+            </div>
+        </section>
+
+                   <!-- activity tab starts here -->
+        <section id="activity-tab" class="w-1/4 justify-end bg-white rounded-xl">
+               <aside>
+                <div class="mt-5">
+                     <div class="flex justify-center gap-5">
+                        <div><img class="w-8" src="assets/activity.png" alt=""></div>
+                        <div><p class="font-bold text-xl">Activity Log</p></div>
+                     </div>
+                     <div class="card-actions flex justify-center">
+                        <button class="btn btn-primary mt-5">Clear History</button>
+                    </div>
+                    <div class="border-t-2 border-dashed border-[#a3abe2] mt-5"></div>
+
+                </div>
+               </aside>
+        </section>
+    </main>
+           
+
+    <script src="js/scripts.js"></script>
+    <script src="js/btn-task.js"></script>
+</body>
+</html>
