@@ -39,7 +39,7 @@ document.getElementById("table-h-date").innerText = date;
 
 //  adding the discover today page
 document.getElementById('discover-page').addEventListener('click', function(){
-window.location.href = "../discover-today.html"
+window.location.href = "https://hridoy421eng.github.io/web-dev-assignment5/discover-today.html"
 })
 
 
