@@ -25,9 +25,21 @@ document.getElementById('theme-toggle').addEventListener('click', function(){
 });
 
 
-
+// adding the day
+const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const today = new Date().getDay();
+const currentDayName = weekDays[today];
+document.getElementById('current-day').innerText = currentDayName;
 
 // adding date to the table head
-const today = new Date();
-const date = today.toLocaleDateString();
+const todayDate = new Date();
+const date = todayDate.toLocaleDateString();
 document.getElementById("table-h-date").innerText = date;
+
+
+//  adding the discover today page
+document.getElementById('discover-page').addEventListener('click', function(){
+window.location.href = "../discover-today.html"
+})
+
+

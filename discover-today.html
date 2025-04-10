@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+</head>
+<body class="poppins-regular bg-[#F4F7FF]">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm mt-5 justify-between items-center text-center mx-auto">
+                <div class="flex-1 ml-5">
+                    <div class="flex gap-2">
+                        <div class="w-10 rounded-full">
+                            <img class="object-cover" src="assets/logo.png" alt="photo of logo">
+                        </div>
+                        <div class="text-3xl">Dev<span class="font-bold">Board</span>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div>
+                    <div id="back-btn" class="card-actions mb-5">
+                        <button class="btn btn-primary mt-5">Back to Desk</button>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 class="text-3xl font-bold text-center mt-5">Blogs</h2>
+
+                   <!-- Question answer section here -->
+        <section>
+
+                  <!--  ques ans no 1  -->
+            <div class="bg-white mt-5">
+                <h4 class="text-2xl font-bold ml-5 pt-5">Question-1: What are the different ways to select an element in the DOM?</h4>
+
+                <div class="border-t-2 border-dotted border-[#a3abe2] mt-5"></div>
+
+                <p class="text-xl mx-5 my-5 pb-5 space-x-2">There are many way's to select an element in the DOM.Like by Id : <span class="font-bold">[document.getElementById("id")]</span>,   by class name : <span class="font-bold">[document.getElementByClassesNames("className")]</span>, by tag name : <span class="font-bold">[document.getElementByTagName("tagName")]</span>,using query selectors : <span class="font-bold">[document.getElementByquerySelector("CSS selector")</span>, to get multiple selectors : -- <span class="font-bold">[document.getElementByquerySelectorAll("CSS selector")]]</span> ,and by attibute name : <span class="font-bold">[document.getElementByName("nameAttribute")]</span>.</p>
+
+            </div>
+             
+            <!--  ques ans no 2 -->
+            <div class="bg-white mt-5">
+                <h4 class="text-2xl font-bold ml-5 pt-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+
+                <div class="border-t-2 border-dotted border-[#a3abe2] mt-5"></div>
+
+                <p class="text-xl mx-5 my-5 pb-5 space-x-2"><span class="font-bold">InnerHTML :</span> It represents the HTML markup inside an element.Both HTML tags and content can be set here. <span class="font-bold">innterText : </span>It represents the text inside an element. Displaying or modifying the text. <span class="font-bold">textContent : </span> It also represents the text content of an element.</p>
+
+            </div>
+             
+            <!--  ques ans no 3 -->
+            <div class="bg-white mt-5">
+                <h4 class="text-2xl font-bold ml-5 pt-5">Question-3: What is event delegation in the DOM?</h4>
+
+                <div class="border-t-2 border-dotted border-[#a3abe2] mt-5"></div>
+
+                <p class="text-xl mx-5 my-5 pb-5 space-x-2">Event delegation is a way , where attaching a single event listener to the parent element we can handle the child elements. No need to add event listener repeatedly on child elements. </p>
+
+            </div>
+             
+            <!--  ques ans no 4 -->
+            <div class="bg-white mt-5">
+                <h4 class="text-2xl font-bold ml-5 pt-5">Question-4: What is event bubbling in the DOM?</h4>
+
+                <div class="border-t-2 border-dotted border-[#a3abe2] mt-5"></div>
+
+                <p class="text-xl mx-5 my-5 pb-5 space-x-2"><span class="font-bold">Event Bubbling : </span> it's a way where, by adding event on a child element it allows parent elements to detect and respond to events that occur on their child elements. After trggering, the event Bubbles up to the parent element until it reaches hte document leve.</p>
+
+            </div>
+             
+            <!--  ques ans no 5 -->
+            <div class="bg-white mt-5">
+                <h4 class="text-2xl font-bold ml-5 pt-5">Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+
+                <div class="border-t-2 border-dotted border-[#a3abe2] mt-5"></div>
+
+                <p class="text-xl mx-5 my-5 pb-5 space-x-2">To create an element we need to use the <span class="font-bold">document.createElement()</span>method. then we need to add the context inside it by <span class="font-bold">newElement.textContent</span>. Then if we need to add the element we need to use <span class="font-bold">document.body.appendChild(newElement)</span>method. And if we need to remove the element , we need to use the <span class="font-bold"> parent.removeChild(child)</span>method.</p>
+
+            </div>
+        </section>            
+    </main>
+
+
+    <script src="js/back.btn.js"></script>
+    <script src="js/btn-task.js"></script>
+</body>
+</html>
