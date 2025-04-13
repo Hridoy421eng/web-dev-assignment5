@@ -12,9 +12,9 @@ for (let i = 0; i <buttons.length; i++){
         convertedNavTask += 1;
         document.getElementById('task-assigned').innerText = convertedTaskAssigned;
         document.getElementById('nav-task').innerText = convertedNavTask;
-        buttons.setAttribute("disabled", true) 
+        this.disabled = true;  
 
-        if(buttons.setAttribute("disabled", true)){
+        if(this.disabled = true){
             
             const container = document.getElementById('parent-div');
             const card = this.closest('.card-body');
